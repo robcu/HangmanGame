@@ -8,12 +8,17 @@ public class Main {
     static Scanner scanner = new Scanner(System.in);
     static Random random = new Random();
 
-    public static void main(String[] args) {
-
+    public static void populateWordBank(){
         wordBank.add("pajamas");
         wordBank.add("gimmick");
         wordBank.add("emblaze");
         wordBank.add("oblique");
+        wordBank.add("savoury");
+    }
+
+    public static void main(String[] args) {
+
+        populateWordBank();
 
         Integer rand = random.nextInt(wordBank.size());
         String secretWord = wordBank.get(rand);
@@ -58,4 +63,6 @@ public class Main {
         }
 
     }
+
+
 }
